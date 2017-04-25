@@ -13,11 +13,11 @@
     },
     "app-id": {
       "type": "string",
-      "metadata": { "description": "Created from https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "Created from https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
     }
   },
   "variables": {

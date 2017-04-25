@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const INPUT = path.resolve(__dirname, '../core/azuredeploy.src.json');
+const INPUT = path.resolve(__dirname, './azuredeploy.src.json');
 const OUTPUT = path.resolve(__dirname, '../core/azuredeploy.json');
 
 fs.readFile(INPUT, 'utf8', (err, text) => {

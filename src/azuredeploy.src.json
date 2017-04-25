@@ -17,7 +17,7 @@
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App password created at https://dev.botframework.com/bots/new" }
     }
   },
   "variables": {

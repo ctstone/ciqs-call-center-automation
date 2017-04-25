@@ -1,20 +1,31 @@
-#Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# About this repo
+* Maintained by Chris Stone <chstone@microsoft.com>
+* Project: CIQS deployment for Call Center Automation
+* Use case: Provide an Interactive Voice Response (IVR) bot to process product orders for a fictious company that sells bicycles and bicycle accessories.
 
-#Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Platforms
+* [Bot Framework](https://docs.botframework.com/en-us/skype/calling/) with [Skype Calling](https://docs.botframework.com/en-us/skype/calling/) channel  
+Routes calls to the bot
+* [Bing Speech Service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home)  
+Processes speech-to-text
+* [LUIS](https://www.luis.ai/) (Language Understanding Intelligent Service)  
+Extracts intent and entities from text
+* [Azure Search](https://docs.microsoft.com/en-us/azure/search/)  
+Indexes the product catalog for product-query matching
+* [Azure SQL](https://docs.microsoft.com/en-us/azure/sql-database/)  
+Stores product and order data
+* [DocumentDB](https://docs.microsoft.com/en-us/azure/documentdb/)  
+Stores bot state and event logs
+* [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/)  
+Stores bot audio data for debugging
+* [Azure App Services](https://docs.microsoft.com/en-us/azure/app-service/)  
+Hosts the bot application
 
-#Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# ARM Deploy
 
-#Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## CIQS
+URL coming soon
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## PowerShell
+1. `New-AzureRmResourceGroup chstone-ciqs eastus`
+2. `New-AzureRmResourceGroupDeployment -Name test1 -ResourceGroupName chstone-ciqs -TemplateFile .\core\azuredeploy.json`

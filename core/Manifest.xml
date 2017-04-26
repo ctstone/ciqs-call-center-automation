@@ -14,7 +14,7 @@
     </Manual>
     <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources" />
     <Manual title="Complete">
-      <Instructions src="md/Finished.md" format="markdown" />
+      <Instructions src="md/Complete.md" format="markdown" />
     </Manual>
   </ProvisioningSteps>
 </Template>

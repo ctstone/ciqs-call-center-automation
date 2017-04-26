@@ -1,6 +1,21 @@
-# All done
+# One last step
 
-[Add the bot](https://join.skype.com/bot/Outputs.appId) to your Skype contacts list to start a conversation.
+Before you can talk to your bot, you must enable **Skype Calling** for your bot's Skype Channel.
+
+Navigate to the [Bot Portal](https://dev.botframework.com/bots) and click your your bot's name.
+
+Find the Skype Channel and click `edit`  
+![screenshot]({PatternAssetBaseUrl}/edit-skype.png)
+
+Find the option for **1:1 audio calls** and enable it.  
+![screenshot]({PatternAssetBaseUrl}/edit-skype.png)
+> Your bot's calling webhook is `https://{Outputs.site.hostNames[0]}/api/calls`
+
+Save the configuration.
+
+# Talking to your bot
+
+[Add the bot](https://join.skype.com/bot/{Inputs.appId}) to your Skype contacts list to start a conversation.
 
 You can order any products from the standard Adventure Works sample database inventory. For example:
 1. Mountain bikes

@@ -7,17 +7,17 @@
       "defaultValue": "chstone",
       "metadata": { "description": "User name for Azure SQL" }
     },
-    "luis-management-key": {
-      "type": "string",
-      "metadata": { "description": "Programatic key from https://www.luis.ai/home/keys" }
-    },
     "app-id": {
       "type": "string",
-      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App ID created at the <a target=\"_blank\" href=\"https://dev.botframework.com/bots/new\">Bot Portal</a>" }
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App Password created at the <a target=\"_blank\" href=\"https://dev.botframework.com/bots/new\">Bot Portal</a>" }
+    },
+    "luis-management-key": {
+      "type": "string",
+      "metadata": { "description": "Programmatic LUIS key copied from the <a target=\"_blank\" href=\"https://www.luis.ai/home/keys\">LUIS Portal</a>" }
     }
   },
   "variables": {

@@ -10,7 +10,7 @@
   <EstimatedTime>10 Minutes</EstimatedTime>
   <ProvisioningSteps>
     <Manual title="Requirements">
-      <Instructions src="md/Setup.md" format="markdown" />
+      <Instructions src="md/Requirements.md" format="markdown" />
     </Manual>
     <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources" />
     <Manual title="Complete">

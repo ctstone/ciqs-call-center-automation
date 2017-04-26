@@ -19,4 +19,4 @@ This solution frees up Contoso's call center staff to perform other duties by au
 * **Azure SQL** stores product inventory and order status
 
 ## Architecture
-[image here]
+<img src="{PatternAssetBaseUrl}/arch.png" />

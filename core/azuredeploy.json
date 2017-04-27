@@ -278,6 +278,10 @@
     "appId": {
       "value": "[parameters('app-id')]",
       "type": "string"
+    },
+    "siteHostName": {
+      "value": "[reference(variables('web-site-name')).hostNames[0]]",
+      "type": "string"
     }
   }
 }

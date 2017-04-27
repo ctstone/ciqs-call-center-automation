@@ -9,13 +9,13 @@ Find the Skype Channel and click `edit`
 
 Find the option for **1:1 audio calls** and enable it.  
 ![screenshot]({PatternAssetBaseUrl}/skype-calling.png)
-> Your bot's calling webhook is `https://{Outputs.site.hostNames[0]}/api/calls`
+> Your bot's calling webhook is `https://{Outputs.siteHostName}/api/calls`
 
 Save the configuration.
 
 # Talking to your bot
 
-[Add the bot](https://join.skype.com/bot/{Inputs.app-id}) to your Skype contacts list to start a conversation.
+[Add the bot](https://join.skype.com/bot/{Outputs.appId}) to your Skype contacts list to start a conversation.
 
 You can order any products from the standard Adventure Works sample database inventory. For example:
 1. Mountain bikes

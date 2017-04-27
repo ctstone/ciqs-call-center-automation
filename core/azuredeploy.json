@@ -9,15 +9,15 @@
     },
     "app-id": {
       "type": "string",
-      "metadata": { "description": "App ID created at the <a target=\"_blank\" href=\"https://dev.botframework.com/bots/new\">Bot Portal</a>" }
+      "metadata": { "description": "App ID created at https://dev.botframework.com/bots/new" }
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "App Password created at the <a target=\"_blank\" href=\"https://dev.botframework.com/bots/new\">Bot Portal</a>" }
+      "metadata": { "description": "App Password created at https://dev.botframework.com/bots/new" }
     },
     "luis-management-key": {
       "type": "string",
-      "metadata": { "description": "Programmatic LUIS key copied from the <a target=\"_blank\" href=\"https://www.luis.ai/home/keys\">LUIS Portal</a>" }
+      "metadata": { "description": "Programmatic LUIS key copied from https://www.luis.ai/home/keys" }
     }
   },
   "variables": {

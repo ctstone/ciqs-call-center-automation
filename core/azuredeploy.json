@@ -194,7 +194,7 @@
             "MICROSOFT_APP_PASSWORD": "[parameters('app-password')]",
             "LUIS_REGION": "[variables('luis-region')]",
             "LUIS_KEY": "[listKeys(variables('luis-id'), variables('cognitive-version')).key1]",
-            "LUIS_MANAGMENT_KEY": "[parameters('luis-management-key')]",
+            "LUIS_MANAGER_KEY": "[parameters('luis-management-key')]",
             "LUIS_APP_ID": "",
             "SPEECH_KEY": "[listKeys(variables('speech-id'), variables('cognitive-version')).key1]",
             "SPEECH_ENDPOINT": "[reference(variables('speech-name')).endpoint]",

@@ -4,20 +4,20 @@
   "parameters": {
     "admin-user": {
       "type": "string",
-      "defaultValue": "chstone",
+      "defaultValue": "adminuser",
       "metadata": { "description": "User name for Azure SQL" }
     },
     "luis-management-key": {
       "type": "string",
-      "metadata": { "description": "Programatic key from https://www.luis.ai/home/keys" }
+      "metadata": { "description": "Programatic key from <https://www.luis.ai/home/keys>" }
     },
     "app-id": {
       "type": "string",
-      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App Id created at <https://dev.botframework.com/bots/new>" }
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "App password created at https://dev.botframework.com/bots/new" }
+      "metadata": { "description": "App password created at <https://dev.botframework.com/bots/new>" }
     }
   },
   "variables": {
@@ -225,6 +225,7 @@
             "LUIS_REGION": "[variables('luis-region')]",
             "LUIS_KEY": "[listKeys(variables('luis-id'), variables('cognitive-version')).key1]",
             "LUIS_MANAGMENT_KEY": "[parameters('luis-management-key')]",
+            "LUIS_APP_ID": "",
             "SPEECH_KEY": "[listKeys(variables('speech-id'), variables('cognitive-version')).key1]",
             "SPEECH_ENDPOINT": "[reference(variables('speech-name')).endpoint]",
             "SPEECH_REGION": "",

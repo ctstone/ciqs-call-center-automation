@@ -1,4 +1,4 @@
-# One last step
+## One last step
 
 Before you can talk to your bot, you must enable **Skype Calling** for your bot's Skype Channel.
 
@@ -13,7 +13,7 @@ Find the option for **1:1 audio calls** and enable it.
 
 Save the configuration.
 
-# Talking to your bot
+## Talking to your bot
 
 [Add the bot](https://join.skype.com/bot/{Outputs.appId}) to your Skype contacts list to start a conversation.
 

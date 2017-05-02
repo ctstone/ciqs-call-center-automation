@@ -38,7 +38,7 @@ The core of the solution is the bot web app, which dispatches requests to manage
 
 [survey]: https://www.talkdesk.com/blog/10-customer-services-statistics-for-call-center-supervisors/ "Survey Source"
 [deployments]: https://start.cortanaintelligence.com/Deployments?type=ciqs-call-center-automation "Your Deployments"
-[partners]: https://aka.ms/callcenter-sipartners "System Integraters"
+[partners]: https://aka.ms/callcenter-sipartners "System Integrator Partners"
 [howto]: https://github.com/Azure/cortana-intelligence-call-center-solution/tree/version2
 [arch-ciqs]: {PatternAssetBaseUrl}/arch.png
 [arch-local]: ../../assets/arch.png

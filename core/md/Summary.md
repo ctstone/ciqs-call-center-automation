@@ -20,13 +20,13 @@ The `Deploy` button on this page will launch a workflow that deploys an instance
 
 > For more details on this solution, including source code and data customization, explore this project on [GitHub][github].
 
-## AI and NLP Stack
+## AI and NLP Azure Services
 * **Bing Speech** transcribes raw speech data into text form
 * **LUIS** (Language Understanding Intelligent Service) identifies caller intent (place an order, find an order, etc.) and spoken entities (product categories, dates, times, etc.) from the transcribed text.
 * **Azure Search** matches and ranks products from the inventory against the caller's description, and applies advanced text analysis for common synonyms.
 * **Microsoft Bot Framework** processes conversation results from the caller and manages the call workflow.
 
-## Supporting Services
+## Supporting Azure Services
 * **App Services** hosts the core logic of the bot as a Node.js web app
 * **DocumentDB** stores shared session state for every conversation, allowing the web application to scale out statelessly.
 * **Azure SQL** stores product inventory and order status
@@ -34,7 +34,7 @@ The `Deploy` button on this page will launch a workflow that deploys an instance
 ## Solution Architecture
 ![Architecture diagram][arch-local]
 
-The core of the solution is the bot web app, which dispatches requests to the cognitive and storage managed services, depending on call flow logic.
+The core of the solution is the bot web app, which dispatches requests to managed cloud services in order to communicate with the caller.
 
 [survey]: https://www.talkdesk.com/blog/10-customer-services-statistics-for-call-center-supervisors/ "Survey Source"
 [deployments]: https://start.cortanaintelligence.com/Deployments?type=ciqs-call-center-automation "Your Deployments"

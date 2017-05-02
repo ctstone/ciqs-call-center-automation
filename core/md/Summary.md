@@ -32,7 +32,7 @@ The `Deploy` button on this page will launch a workflow that deploys an instance
 * **Azure SQL** stores product inventory and order status
 
 ## Solution Architecture
-![Architecture diagram][arch3]
+![Architecture diagram][arch-local]
 
 The core of the solution is the bot web app, which dispatches requests to the cognitive and storage managed services, depending on call flow logic.
 
@@ -40,9 +40,8 @@ The core of the solution is the bot web app, which dispatches requests to the co
 [deployments]: https://start.cortanaintelligence.com/Deployments?type=ciqs-call-center-automation "Your Deployments"
 [partners]: https://aka.ms/personalizedoffers-sipartners "System Integraters"
 [howto]: https://github.com/Azure/cortana-intelligence-call-center-solution/tree/version2
-[arch]: https://stgdengbhyedqljq.blob.core.windows.net/ciqs-call-center-automation/arch.png
-[arch2]: {PatternAssetBaseUrl}/arch.png
-[arch3]: ../../assets/arch.png
+[arch-ciqs]: {PatternAssetBaseUrl}/arch.png
+[arch-local]: ../../assets/arch.png
 [github]: https://github.com/Azure/cortana-intelligence-call-center-solution
 
 # Disclaimer

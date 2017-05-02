@@ -1,5 +1,5 @@
 # Summary
-Call centers are essential to businesses of any size. In fact, [61%](survey) of consumers prefer to communicate via phone, and most of them prefer self-service. Because customer satisfaction is a priority for all businesses, self-service is a critical facet of any customer-facing communications strategy.
+Call centers are essential to businesses of any size. In fact, [61%][survey] of consumers prefer to communicate via phone, and most of them prefer self-service. Because customer satisfaction is a priority for all businesses, self-service is a critical facet of any customer-facing communications strategy.
 
 This solution is an intelligent call center automation pattern for fulfilling customer order requests. Businesses with no existing call center solution can easily get started automating calls, while companies with existing human-operatred call centers or Interactive Voice Response (IVR) systems can utilize this solution to extend functionality and intelligence to established workflows.
 
@@ -7,8 +7,8 @@ In an era when mobile phones are dominant and keypads are not always readily acc
 
 # Description
 ## Estimated Provisioning Time **<10 Minutes**
-*Save time by contacting a trained [SI partner](partners) to help you build a proof of concept or deploy & integrate this solution*
-> **Note** If you have already deployed this solution, you can [view your existing deployment](deployments) on the Cortana Intelligence portal.
+*Save time by contacting a trained [SI partner][partners] to help you build a proof of concept or deploy & integrate this solution*
+> **Note** If you have already deployed this solution, you can [view your existing deployment][deployments] on the Cortana Intelligence portal.
 
 The Cortana Intelligence Suite provides advanced analytics tools through Microsoft Azure—data ingestion, data storage, data processing and advanced analytics components—all of the essential elements for building a personalized offer solution.
 
@@ -18,7 +18,7 @@ The target use case is for a fictious company, Contoso LLC, that sells bicycles 
 
 The `Deploy` button on this page will launch a workflow that deploys an instance of this solution within an Azure subscription of your choosing. The solution includes multiple Azure services (described below) and provides a few short instructions after the deployment that will help you setup communications with your new bot.
 
-> For more details on this solution, including source code and data customization, explore this project on [GitHub](github).
+> For more details on this solution, including source code and data customization, explore this project on [GitHub][github].
 
 ## AI and NLP Stack
 * **Bing Speech** transcribes raw speech data into text form

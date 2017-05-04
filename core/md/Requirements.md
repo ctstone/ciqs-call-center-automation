@@ -1,30 +1,33 @@
-# `REQUIRED`: Register a new bot
+# `REQUIRED`: Register your bot
 
-Sign in to the [bot developer portal](https://dev.botframework.com/bots/new) to register your bot. Provide the following values:
-* **Name**: a friendly name for your bot (e.g. Adventure Works Bot)
-* **Bot handle**: permanant bot name, alphanumeric only (e.g. my-aw-bot)
-* **Description**: required (e.g. My sample bot)
-* **Messaging endpoint**: leave blank for now
-* **Create Microsoft App Id and Password**: click the button and follow instructions to create a new `App Id`. Make sure to to find the button to `Generate New Password` on the subsequent page.
-* **Owners**: your email
-* **AppInsights**: leave blank for now
+You must manually register a new bot. A bot registration is the authenticated link between you and your callers.
 
-> **IMPORTANT** Copy your `App Id` and `Password`. Your password cannot be retrieved after first display.
+1. Sign in to the [bot registration portal](https://dev.botframework.com/bots/new)
+1. Set your bot's `profile`  
+![screenshot][1]
+1. Set your bot's `app configuration`. Clicking the blue button will open a new page (you may have to re-authenticate with the App Registration Portal).  
+![screenshot][2]
+1. Register an `app` for your bot. Be sure to copy the password after it is generated. You will not be able to retrieve it again.  
+![screenshot][3]
+1. `Complete` your bot's registration  
+![screenshot][4]
 
+> Any fields left blank in the screenshots above may be left blank.
 
-Finally, aggree to the terms, register the bot, and return to this page.
+*Before continuing, make sure you have copied your `App Id` and `App Password`. We will need these later.*
 
 # `REQUIRED`: Copy your LUIS programmatic key
+LUIS is your bot's intelligent language service for understanding callers' intents and entities. For the bot to load the language model for this solution, you must supply your `programmatic key`.
 
-Navigate to the [LUIS Portal](https://www.luis.ai/home/keys) and sign in.
+1. Navigate to the [LUIS Portal](https://www.luis.ai/home/keys) and sign in.
+![screenshot][5]
+1. Click the `my keys` tab and copy your `programmatic api key`
+![screenshot][6]
 
-> **IMPORTANT** Copy your LUIS `Programmatic API Key`. Your programmatic key is different from endpoint keys and external keys. Make sure to only only copy the programmatic key for this step.
 
-After you sign in and find your programmatic key, return to this page.
-
-___
-
-*Before continuing, please ensure that you have the following 3 values ready to paste*
-1. Application Id
-1. Application Password
-1. LUIS Programmatic Key
+[1]: ../../assets/create-bot-01.png
+[2]: ../../assets/create-bot-02.png
+[3]: ../../assets/create-bot-03.png
+[4]: ../../assets/create-bot-04.png
+[5]: ../../assets/luis-key-01.png
+[6]: ../../assets/luis-key-02.png

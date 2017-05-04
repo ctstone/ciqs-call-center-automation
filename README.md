@@ -1,7 +1,7 @@
 # About this repo
 * Maintained by Chris Stone <chstone@microsoft.com>
 * Project: CIQS deployment for Call Center Automation
-* Use case: Provide an Interactive Voice Response (IVR) bot to process product orders for a fictious company that sells bicycles and bicycle accessories.
+* Use case: Provide an Interactive Voice Response (IVR) bot to process product orders for a fictitious company that sells bicycles and bicycle accessories.
 
 ## Platforms
 * [Bot Framework](https://docs.botframework.com/en-us/skype/calling/) with [Skype Calling](https://docs.botframework.com/en-us/skype/calling/) channel  
@@ -22,10 +22,18 @@ Stores bot audio data for debugging
 Hosts the bot application
 
 # ARM Deploy
+Choose CIQS, PowerShell, or Portal depending on your familiarity with Azure
 
 ## CIQS
-URL coming soon
+[Guided deployment](https://start.cortanaintelligence.com/Deployments/new/ciqs-call-center-automation@sharee26ac6488f2a4102a5956f14d1fe5a0b) using the Cortana Intelligence Quickstart
+
+## Portal
+[Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fctstone%2Fciqs-call-center-automation%2Fmaster%2Fcore%2Fazuredeploy.json)
 
 ## PowerShell
-1. `New-AzureRmResourceGroup chstone-ciqs eastus`
-2. `New-AzureRmResourceGroupDeployment -Name test1 -ResourceGroupName chstone-ciqs -TemplateFile .\core\azuredeploy.json`
+```PowerShell
+$rg = "call-center"
+$loc = "eastus"
+New-AzureRmResourceGroup $rg $loc
+New-AzureRmResourceGroupDeployment -Name CallCenterSolution -ResourceGroupName $rg -TemplateFile .\core\azuredeploy.json
+```

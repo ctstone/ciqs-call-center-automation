@@ -25,13 +25,16 @@
     <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources">
       <Parameters>
         <Parameter name="app-id" hidden="true">
-          <DefaultValue>{Outputs.appId}</DefaultValue>
+          <DefaultValue>{Inputs.appId}</DefaultValue>
         </Parameter>
         <Parameter name="app-password" hidden="true">
-          <DefaultValue>{Outputs.appPassword}</DefaultValue>
+          <DefaultValue>{Inputs.appPassword}</DefaultValue>
         </Parameter>
         <Parameter name="luis-management-key" hidden="true">
-          <DefaultValue>{Outputs.luisManagementKey}</DefaultValue>
+          <DefaultValue>{Inputs.luisManagementKey}</DefaultValue>
+        </Parameter>
+        <Parameter name="admin-user" hidden="true">
+          <DefaultValue>adminuser</DefaultValue>
         </Parameter>
       </Parameters>
     </ArmDeployment>

@@ -9,15 +9,15 @@
     },
     "app-id": {
       "type": "string",
-      "metadata": { "description": "App Id created at <https://dev.botframework.com/bots/new>" }
+      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "App password created at <https://dev.botframework.com/bots/new>" }
+      "metadata": { "description": "App password created at https://dev.botframework.com/bots/new" }
     },
     "luis-management-key": {
       "type": "string",
-      "metadata": { "description": "Programatic key from <https://www.luis.ai/home/keys>" }
+      "metadata": { "description": "Programatic key from https://www.luis.ai/home/keys" }
     }
   },
   "variables": {
@@ -197,7 +197,7 @@
             "LUIS_MANAGER_KEY": "[parameters('luis-management-key')]",
             "LUIS_APP_ID": "",
             "SPEECH_KEY": "[listKeys(variables('speech-id'), variables('cognitive-version')).key1]",
-            "SPEECH_ENDPOINT": "https://speech.platform.bing.com/recognize",
+            "SPEECH_ENDPOINT": "[reference(variables('speech-name')).endpoint]",
             "SPEECH_REGION": "",
             "SEARCH_SERVICE": "[variables('search-name')]",
             "SEARCH_KEY": "[listAdminKeys(variables('search-id'), variables('search-version')).primaryKey]",

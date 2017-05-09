@@ -9,15 +9,15 @@
     },
     "app-id": {
       "type": "string",
-      "metadata": { "description": "App Id created at <https://dev.botframework.com/bots/new>" }
+      "metadata": { "description": "App Id created at https://dev.botframework.com/bots/new" }
     },
     "app-password": {
       "type": "string",
-      "metadata": { "description": "App password created at <https://dev.botframework.com/bots/new>" }
+      "metadata": { "description": "App password created at https://dev.botframework.com/bots/new" }
     },
     "luis-management-key": {
       "type": "string",
-      "metadata": { "description": "Programatic key from <https://www.luis.ai/home/keys>" }
+      "metadata": { "description": "Programatic key from https://www.luis.ai/home/keys" }
     }
   },
   "variables": {

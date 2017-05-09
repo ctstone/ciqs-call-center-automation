@@ -12,17 +12,29 @@
     <Manual title="Bot Registration">
       <Instructions src="md/Register-Bot.md" format="markdown" />
       <Parameters>
-        <Parameter name="app-id" description="App Id" />
-        <Parameter name="app-password" description="App Password" />
+        <Parameter name="appId" description="App Id" />
+        <Parameter name="appPassword" description="App Password" />
       </Parameters>
     </Manual>
     <Manual title="LUIS Key">
       <Instructions src="md/LUIS-Key.md" format="markdown" />
       <Parameters>
-        <Parameter name="luis-management-key" description="LUIS Programmatic Key" />
+        <Parameter name="luisManagementKey" description="LUIS Programmatic Key" />
       </Parameters>
     </Manual>
-    <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources" />
+    <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources">
+      <Parameters>
+        <Parameter name="app-id" hidden="true">
+          <DefaultValue>{Outputs.appId}</DefaultValue>
+        </Parameter>
+        <Parameter name="app-password" hidden="true">
+          <DefaultValue>{Outputs.appPassword}</DefaultValue>
+        </Parameter>
+        <Parameter name="luis-management-key" hidden="true">
+          <DefaultValue>{Outputs.luisManagementKey}</DefaultValue>
+        </Parameter>
+      </Parameters>
+    </ArmDeployment>
     <Manual title="Complete">
       <Instructions src="md/Complete.md" format="markdown" />
     </Manual>

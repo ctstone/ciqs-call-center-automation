@@ -9,7 +9,6 @@
   <Summary src="md/Summary.md" format="markdown"/>
   <EstimatedTime>10 Minutes</EstimatedTime>
   <ProvisioningSteps>
-    <Function name="configure" title="Configuring" retriable="true" />
     <Manual title="Bot Registration">
       <Instructions src="md/Register-Bot.md" format="markdown" />
       <Parameters>

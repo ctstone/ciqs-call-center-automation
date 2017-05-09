@@ -12,9 +12,7 @@
     <Function name="configure" title="Configuring" retriable="true" />
     <Manual title="Requirements">
       <Instructions src="md/Requirements.md" format="markdown" />
-      <Parameters>
-        <Parameter name="foo" description="Something here" />                
-      </Parameters>      
+      
     </Manual>
     <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources" />
     <Manual title="Complete">

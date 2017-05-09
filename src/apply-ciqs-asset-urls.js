@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const async = require('async');
 
 const ROOT_DIR = path.resolve(__dirname, '../core/md');
 const SEARCH_PATTERN = /\.\.\/\.\.\/assets/g;

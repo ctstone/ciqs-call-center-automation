@@ -10,9 +10,18 @@
   <EstimatedTime>10 Minutes</EstimatedTime>
   <ProvisioningSteps>
     <Function name="configure" title="Configuring" retriable="true" />
-    <Manual title="Requirements">
-      <Instructions src="md/Requirements.md" format="markdown" />
-      
+    <Manual title="Bot Registration">
+      <Instructions src="md/Register-Bot.md" format="markdown" />
+      <Parameters>
+        <Parameter name="app-id" description="App Id" />
+        <Parameter name="app-password" description="App Password" />
+      </Parameters>
+    </Manual>
+    <Manual title="LUIS Key">
+      <Instructions src="md/LUIS-Key.md" format="markdown" />
+      <Parameters>
+        <Parameter name="luis-management-key" description="LUIS Programmatic Key" />
+      </Parameters>
     </Manual>
     <ArmDeployment source="azuredeploy.json" title="Deploy Azure bot resources" />
     <Manual title="Complete">

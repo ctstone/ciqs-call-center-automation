@@ -1,4 +1,4 @@
-# `REQUIRED`: Register your bot
+# Register your bot
 
 You must manually register a new bot. A bot registration is the authenticated link between you and your callers.
 
@@ -14,22 +14,8 @@ You must manually register a new bot. A bot registration is the authenticated li
 
 > Any fields left blank in the screenshots above may be left blank.
 
-*Before continuing, make sure you have copied your `App Id` and `App Password`. We will need these later.*
-
-# `REQUIRED`: Copy your LUIS programmatic key
-LUIS is your bot's intelligent language service for understanding callers' intents and entities. For the bot to load the language model for this solution, you must supply your `programmatic key`.
-
-1. Navigate to the [LUIS Portal][8] and sign in.
-![screenshot][5]
-1. Click the `my keys` tab and copy your `programmatic api key`
-![screenshot][6]
-
-
 [1]: ../../assets/create-bot-01.png
 [2]: ../../assets/create-bot-02.png
 [3]: ../../assets/create-bot-03.png
 [4]: ../../assets/create-bot-04.png
-[5]: ../../assets/luis-key-01.png
-[6]: ../../assets/luis-key-02.png
 [7]: https://dev.botframework.com/bots/new
-[8]: https://www.luis.ai/home/keys

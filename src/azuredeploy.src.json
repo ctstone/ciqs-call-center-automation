@@ -227,7 +227,7 @@
             "LUIS_MANAGER_KEY": "[parameters('luis-management-key')]",
             "LUIS_APP_ID": "",
             "SPEECH_KEY": "[listKeys(variables('speech-id'), variables('cognitive-version')).key1]",
-            "SPEECH_ENDPOINT": "[reference(variables('speech-name')).endpoint]",
+            "SPEECH_ENDPOINT": "https://speech.platform.bing.com/recognize",
             "SPEECH_REGION": "",
             "SEARCH_SERVICE": "[variables('search-name')]",
             "SEARCH_KEY": "[listAdminKeys(variables('search-id'), variables('search-version')).primaryKey]",

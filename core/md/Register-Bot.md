@@ -2,7 +2,7 @@
 
 You must manually register a new bot. A bot registration is the authenticated link between you and your callers.
 
-1. Sign in to the [bot registration portal][5]
+1. Sign in to the [bot registration portal][6]
 1. Set your bot's `profile`  
 ![screenshot][1]
 1. Set your bot's `app configuration`. Clicking the blue button will open a new page (you may have to authenticate with the App Registration Portal).  
@@ -19,4 +19,4 @@ You must manually register a new bot. A bot registration is the authenticated li
 [3]: ../../assets/create-bot-03.png
 [4]: ../../assets/create-bot-04.png
 [5]: ../../assets/create-bot-05.png
-[5]: https://dev.botframework.com/bots/new
+[6]: https://dev.botframework.com/bots/new

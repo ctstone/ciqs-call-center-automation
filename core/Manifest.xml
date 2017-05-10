@@ -38,6 +38,13 @@
         </Parameter>
       </Parameters>
     </ArmDeployment>
+    <Function name="configure" title="Configure bot" retriable="true">
+      <Parameters>
+        <Parameter name="siteHostName" hidden="true">
+          <DefaultValue>{Outputs.siteHostName}</DefaultValue>
+        </Parameter>
+      </Parameters>
+    </Function>
     <Manual title="Complete">
       <Instructions src="md/Complete.md" format="markdown" />
     </Manual>

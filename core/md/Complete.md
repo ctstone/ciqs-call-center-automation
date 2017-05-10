@@ -3,7 +3,7 @@
 Before you can talk to your bot, you must enable **Skype Calling** for your bot's Skype Channel.
 
 1. Navigate to the [Bot Portal][5]
-1. Click your your bot's name.
+1. Click your your bot's name.  
 ![screenshot][1]
 1. Edit the bot's `Skype Configuration`
 ![screenshot][2]

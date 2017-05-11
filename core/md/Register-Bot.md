@@ -7,7 +7,7 @@ You must manually register a new bot. A bot registration is the authenticated li
 ![screenshot][1]
 1. Set your bot's `app configuration`. Clicking the blue button will open a new page (you may have to authenticate with the App Registration Portal).  
 ![screenshot][2]
-1. Register an `app` for your bot. Be sure to copy the password after it is generated. *You will not be able to retrieve it again*. **If you do not see your App name and a pre-generated App ID, close the window repeat the previous step.**
+1. Register an `app` for your bot. Be sure to copy the password after it is generated. *You will not be able to retrieve it again*. **If you do not see your App name and a pre-generated App ID, close the window and repeat the previous step.**
 ![screenshot][3]
 1. Analytics fields may be left blank.  
 ![screenshot][4]

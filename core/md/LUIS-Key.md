@@ -1,11 +1,13 @@
 # Find your LUIS programmatic key
 LUIS is your bot's intelligent language service for understanding callers' intents and entities. For the bot to load the language model for this solution, you must supply your `programmatic key`.
 
-1. Navigate to the [LUIS Portal][3] and sign in.
-![screenshot][1]
-1. Click the `my keys` tab and copy your `programmatic api key`
-![screenshot][2]
+1. Navigate to the [LUIS Portal][3] and sign in.  
+![screenshot][IMG1]
+1. Click the `my keys` tab (or look for the ![hamburger][IMG3] icon on small screens) and copy your `programmatic api key`  
+![screenshot][IMG2]
+1. Copy your `programmatic` key to the form field on this page
 
-[1]: ../../assets/luis-key-01.png
-[2]: ../../assets/luis-key-02.png
+[IMG1]: ../../assets/luis-key-01.png
+[IMG2]: ../../assets/luis-key-02.png
+[IMG3]: ../../assets/hamburger.png
 [3]: https://www.luis.ai/home/keys

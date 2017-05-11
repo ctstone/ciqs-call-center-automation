@@ -21,7 +21,6 @@
     }
   },
   "variables": {
-    /** versions **/
     "storage-version": "2017-06-01",
     "serverfarms-version": "2016-09-01",
     "sites-version": "2016-08-01",
@@ -32,16 +31,12 @@
     "cognitive-version": "2016-02-01-preview",
     "web-farm-version": "2016-09-01",
     "web-site-version": "2016-08-01",
-
-    /** common **/
     "prefix": "call",
     "unique": "[uniqueString(resourceGroup().id)]",
     "location": "[resourceGroup().location]",
     "web-app-url": "https://chstone.blob.core.windows.net/public/SHTG/call-center-automation.zip",
     "speech-region": "global",
     "luis-region": "westus",
-
-    /** names **/
     "storage-name": "[concat(variables('prefix'), 'stor', variables('unique'))]",
     "sql-server-name": "[concat(variables('prefix'), 'sql', variables('unique'))]",
     "sql-database-name": "[concat(variables('prefix'), 'db', variables('unique'))]",
@@ -51,8 +46,6 @@
     "search-name": "[concat(variables('prefix'), 'search', variables('unique'))]",
     "web-farm-name": "[concat(variables('prefix'), 'webplan', variables('unique'))]",
     "web-site-name": "[concat(variables('prefix'), 'web', variables('unique'))]",
-
-    /** ids **/
     "storage-id": "[resourceId('Microsoft.Storage/storageAccounts', variables('storage-name'))]",
     "sql-server-id": "[resourceId('Microsoft.Sql/servers', variables('sql-server-name'))]",
     "sql-database-id": "[resourceId('Microsoft.Sql/servers/databases', variables('sql-server-name'), variables('sql-database-name'))]",
@@ -64,7 +57,6 @@
     "web-site-id": "[resourceId('Microsoft.Web/sites', variables('web-site-name'))]"
   },
   "resources": [
-    /** storage account **/
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('storage-name')]",
@@ -73,8 +65,6 @@
       "sku": { "name": "Standard_LRS" },
       "kind": "Storage"
     },
-
-    /** azure sql server **/
     {
       "type": "Microsoft.Sql/servers",
       "name": "[variables('sql-server-name')]",
@@ -86,8 +76,6 @@
         "version": "12.0"
       },
       "resources": [
-
-        /** azure sql database **/
         {
           "name": "[variables('sql-database-name')]",
           "type": "databases",
@@ -103,8 +91,6 @@
             "sampleName": "AdventureWorksLT"
           }
         },
-
-        /** azure sql firewall **/
         {
           "type": "firewallrules",
           "apiVersion": "[variables('sql-server-version')]",
@@ -120,8 +106,6 @@
         }
       ]
     },
-
-    /** documentdb **/
     {
       "type": "Microsoft.DocumentDB/databaseAccounts",
       "name": "[variables('documentdb-name')]",
@@ -131,8 +115,6 @@
         "databaseAccountOfferType": "Standard"
       }
     },
-
-    /** search **/
     {
       "type": "Microsoft.Search/searchServices",
       "name": "[variables('search-name')]",
@@ -140,8 +122,6 @@
       "location": "[variables('location')]",
       "sku": { "name": "basic" }
     },
-
-    /** speech **/
     {
       "type": "Microsoft.CognitiveServices/accounts",
       "name": "[variables('speech-name')]",
@@ -151,8 +131,6 @@
       "kind": "Bing.Speech",
       "properties": { }
     },
-
-    /** luis **/
     {
       "type": "Microsoft.CognitiveServices/accounts",
       "name": "[variables('luis-name')]",
@@ -162,8 +140,6 @@
       "kind": "LUIS",
       "properties": { }
     },
-
-    /** serverfarm **/
     {
       "type": "Microsoft.Web/serverfarms",
       "name": "[variables('web-farm-name')]",
@@ -172,8 +148,6 @@
       "sku": {"name": "S1"},
       "properties": { }
     },
-
-    /** web site **/
     {
       "type": "Microsoft.Web/sites",
       "name": "[variables('web-site-name')]",
@@ -192,8 +166,6 @@
         "serverFarmId": "[variables('web-farm-id')]"
       },
       "resources": [
-
-        /** web site deployment **/
         {
           "type": "extensions",
           "name": "MSDeploy",
@@ -207,8 +179,6 @@
             "connectionString": ""
           }
         },
-
-        /** web site app settings **/
         {
           "type": "config",
           "name": "appsettings",

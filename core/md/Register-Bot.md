@@ -16,9 +16,9 @@ You must manually register a new bot. A bot registration is the authenticated li
 1. `Complete` your bot's registration  
 ![screenshot][5]
 
-[1]: ../../assets/create-bot-01.png
-[2]: ../../assets/create-bot-02.png
-[3]: ../../assets/create-bot-03.png
-[4]: ../../assets/create-bot-04.png
-[5]: ../../assets/create-bot-05.png
+[1]: {PatternAssetBaseUrl}/create-bot-01.png
+[2]: {PatternAssetBaseUrl}/create-bot-02.png
+[3]: {PatternAssetBaseUrl}/create-bot-03.png
+[4]: {PatternAssetBaseUrl}/create-bot-04.png
+[5]: {PatternAssetBaseUrl}/create-bot-05.png
 [6]: https://dev.botframework.com/bots/new

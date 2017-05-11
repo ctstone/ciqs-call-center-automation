@@ -7,7 +7,7 @@ LUIS is your bot's intelligent language service for understanding callers' inten
 ![screenshot][IMG2]
 1. Copy your `programmatic` key to the form field on this page
 
-[IMG1]: {PatternAssetBaseUrl}/luis-key-01.png
-[IMG2]: {PatternAssetBaseUrl}/luis-key-02.png
-[IMG3]: {PatternAssetBaseUrl}/hamburger.png
+[IMG1]: ../../assets/luis-key-01.png
+[IMG2]: ../../assets/luis-key-02.png
+[IMG3]: ../../assets/hamburger.png
 [3]: https://www.luis.ai/home/keys

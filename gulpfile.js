@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const replace = require('gulp-replace');
 
-const SOURCE = '.';
+const SOURCE = 'src';
 const DEST_EXT = '/Source/data-science/CIQS/Product/Source/Patterns/Data/call-center-automation';
-const DEST = 'dist';
+const DEST = '.';
 
 gulp.task('ciqs', () => {
-  return gulp.src('+(assets|core)/**')
+  return gulp.src('+(assets|core)/**', { cwd: SOURCE })
     .pipe(gulp.dest('', { cwd: DEST }));
 });
 

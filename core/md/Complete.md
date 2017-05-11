@@ -33,9 +33,9 @@ Learn how to:
 1. Manage search synonyms
 1. Integrate LUIS entities with Azure Search
 
-[1]: ../../assets/skype-channel-01.png
-[2]: ../../assets/skype-channel-02.png
-[3]: ../../assets/skype-channel-03.png
+[1]: {PatternAssetBaseUrl}/skype-channel-01.png
+[2]: {PatternAssetBaseUrl}/skype-channel-02.png
+[3]: {PatternAssetBaseUrl}/skype-channel-03.png
 [5]: https://dev.botframework.com/bots
 [6]: https://join.skype.com/bot/{Outputs.appId}
 [7]: https://github.com/Azure/cortana-intelligence-call-center-solution

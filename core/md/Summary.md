@@ -44,5 +44,5 @@ The core of the solution is the bot web app, which dispatches requests to manage
 [3]: https://aka.ms/callcenter-sipartners
 [4]: https://github.com/Azure/cortana-intelligence-call-center-solution/tree/version2
 [5.1]: {PatternAssetBaseUrl}/arch.png
-[5.2]: ../../assets/arch.png 
+[5.2]: {PatternAssetBaseUrl}/arch.png 
 [7]: https://github.com/Azure/cortana-intelligence-call-center-solution

@@ -1,0 +1,21 @@
+{
+  "name": "ciqs-call-center-automation",
+  "version": "1.0.0",
+  "description": "CIQS automation for call-center solution",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bostondatascience.visualstudio.com/DefaultCollection/Data%20Science%20Solutions%20Backlog/_git/ciqs-call-center-automation"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

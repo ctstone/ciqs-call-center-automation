@@ -181,6 +181,22 @@
         },
         {
           "type": "config",
+          "name": "logs",
+          "apiVersion": "[variables('web-site-version')]",
+          "dependsOn": [ 
+            "[variables('web-site-id')]",
+            "[resourceId('Microsoft.Web/sites/extensions', variables('web-site-name'), 'MSDeploy')]"
+          ],
+          "properties": {
+            "applicationLogs": {
+              "fileSystem": {
+                "level": "Verbose"
+              }
+            }
+          }
+        },
+        {
+          "type": "config",
           "name": "appsettings",
           "apiVersion": "[variables('web-site-version')]",
           "dependsOn": [ 

@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const replace = require('gulp-replace');
 
 const SOURCE = 'src';
-const DEST_EXT = '/Source/data-science/CIQS/Product/Source/Patterns/Data/call-center-automation';
+const DEST_EXT = '/Source/data-science/CIQS-Solutions/Data/call-center-automation';
 const DEST = '.';
 
 gulp.task('arm', () => {
@@ -18,4 +18,9 @@ gulp.task('markdown', () => {
     .pipe(gulp.dest('core/md', { cwd: DEST }));
 });
 
-gulp.task('default', ['markdown', 'arm']);
+gulp.task('external', ['markdown', 'arm'], () => {
+  return gulp.src('+(assets|core)/**')
+    .pipe(gulp.dest('.', { cwd: DEST_EXT }));
+});
+
+gulp.task('default', ['external']);

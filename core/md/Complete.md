@@ -14,11 +14,17 @@ Before you can talk to your bot, you must enable **Skype Calling** for your bot'
 # Talking to your bot
 [Add the bot][6] to your Skype contacts list to start a conversation. You are a customer who is looking to place an order for bicycles and bicycle equipment. You are calling an interactive voice response (IVR) to find specific products, given a general description.
 
+> You can use any Skype client app to talk to your bot. Do not use the Skype for Business app.
+
 ## Product search
 You can order any products from the standard Adventure Works sample database inventory. For example:
 1. "Mountain bikes"
 1. "Bike wash"
 1. "Jersey"
+
+> Your first call to the bot may take several seconds to connect, but this should only affect the "cold start" scenario. If your first call does not connect (e.g. due to timeout), retry the call. Subsequent calls should connect almost immediately.
+
+The bot will use your speech input, and any detected intent and entities, to construct a search query for matching products. The bot will ask you clarifying questions if a product has multiple options or if your search returned multiple hits.
 
 ## Product search with attributes
 You can include specific product attributes in your request:
@@ -34,8 +40,6 @@ You can ask product questions
 You can query orders
 1. "where is my order?"
 1. "when will my order ship?"
-
-The bot will use your speech input, and any detected intent and entities, to construct a search query for matching products. The bot will ask you clarifying questions if a product has multiple options or if your search returned multiple hits.
 
 # Next steps
 This is a simple bot that illustrates the ease of connecting Cognitive Services together to achieve an end-to-end solution.

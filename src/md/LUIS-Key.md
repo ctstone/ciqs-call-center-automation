@@ -5,7 +5,7 @@ LUIS is your bot's intelligent language service for understanding callers' inten
 ![screenshot][IMG1]
 1. Click the `my keys` tab (or look for the ![hamburger][IMG3] icon on small screens) and copy your `programmatic api key`  
 ![screenshot][IMG2]
-1. Copy your `programmatic` key to the form field on this page
+1. Copy your `programmatic` key to the form field at the bottom of this page
 
 [IMG1]: ../../assets/luis-key-01.png
 [IMG2]: ../../assets/luis-key-02.png

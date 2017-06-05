@@ -46,6 +46,9 @@
         <Parameter name="admin-user" hidden="true">
           <DefaultValue>adminuser</DefaultValue>
         </Parameter>
+        <Parameter name="PatternAssetBaseUrl" hidden="true">
+          <DefaultValue>{PatternAssetBaseUrl}</DefaultValue>
+        </Parameter>
       </Parameters>
     </ArmDeployment>
     <Manual title="Complete">

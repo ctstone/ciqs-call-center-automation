@@ -18,6 +18,11 @@
     "luis-management-key": {
       "type": "string",
       "metadata": { "description": "Programatic key from https://www.luis.ai/home/keys" }
+    },
+    "PatternAssetBaseUrl": {
+      "type": "string",
+      "defaultValue": "https://bostondata.blob.core.windows.net/call-center-automation/",
+      "metadata": { "description": "Base URL of app build" }
     }
   },
   "variables": {
@@ -37,7 +42,7 @@
     "prefix": "call",
     "unique": "[uniqueString(resourceGroup().id)]",
     "location": "[resourceGroup().location]",
-    "web-app-url": "https://chstone.blob.core.windows.net/public/SHTG/call-center-automation.zip",
+    "web-app-url": "[concat(parameters('PatternAssetBaseUrl'), 'call-center-automation.zip')]",
     "speech-region": "global",
     "luis-region": "westus",
 

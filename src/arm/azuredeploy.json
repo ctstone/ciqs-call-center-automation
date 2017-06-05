@@ -42,7 +42,7 @@
     "prefix": "call",
     "unique": "[uniqueString(resourceGroup().id)]",
     "location": "[resourceGroup().location]",
-    "web-app-url": "[concat(parameters('PatternAssetBaseUrl'), 'call-center-automation.zip')]",
+    "web-app-url": "[uri(parameters('PatternAssetBaseUrl'), 'call-center-automation.zip')]",
     "speech-region": "global",
     "luis-region": "westus",
 

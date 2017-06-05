@@ -21,7 +21,7 @@
     },
     "PatternAssetBaseUrl": {
       "type": "string",
-      "defaultValue": "https://bostondata.blob.core.windows.net/call-center-automation/",
+      "defaultValue": "https://bostondata.blob.core.windows.net/call-center-automation",
       "metadata": { "description": "Base URL of app build" }
     }
   },
@@ -42,7 +42,7 @@
     "prefix": "call",
     "unique": "[uniqueString(resourceGroup().id)]",
     "location": "[resourceGroup().location]",
-    "web-app-url": "[uri(parameters('PatternAssetBaseUrl'), 'call-center-automation.zip')]",
+    "web-app-url": "[concat(parameters('PatternAssetBaseUrl'), '/call-center-automation.zip')]",
     "speech-region": "global",
     "luis-region": "westus",
 
